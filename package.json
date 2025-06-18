@@ -1,0 +1,28 @@
+{
+  "name": "scatch-bag-selling-e-commerce-website",
+  "version": "1.0.0",
+  "description": "Scatch-Bag-Selling-E-Commerce-Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prince-Singh-Dev/Scatch-Bag-Selling-E-Commerce-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prince-Singh-Dev/Scatch-Bag-Selling-E-Commerce-Website/issues"
+  },
+  "homepage": "https://github.com/Prince-Singh-Dev/Scatch-Bag-Selling-E-Commerce-Website#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.0",
+    "multer": "^2.0.1"
+  }
+}
