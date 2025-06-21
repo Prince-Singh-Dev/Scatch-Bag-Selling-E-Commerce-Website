@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const userSchema = moongoose.Schema({
+const userSchema = mongoose.Schema({
     fullname : {
         type : String,
         minLength : 3,
