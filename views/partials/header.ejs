@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scatch Bags</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-['helvetica_now_display'] bg-gray-50">
+
+ <header class="fixed top-0 left-0 w-full bg-white shadow-md px-6 py-4 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="text-2xl font-bold text-blue-700">👜 Scatch Bags</a>
+
+    <!-- If user is logged in -->
+    <% if (user) { %>
+      <div class="flex items-center gap-4">
+        <span class="text-gray-800">Welcome, <strong><%= user.fullname.split(" ")[0] %></strong> 👋</span>
+
+        <a href="/cart" class="flex items-center gap-1 text-blue-600 hover:text-blue-800 transition">
+          <i class="ri-shopping-cart-2-line text-xl"></i> Cart
+        </a>
+
+        <a href="/logout" class="text-sm px-3 py-1 rounded bg-red-100 text-red-600 hover:bg-red-200 transition">
+          Logout
+        </a>
+      </div>
+
+    <!-- If user is NOT logged in -->
+    <% } else { %>
+      <div class="flex items-center gap-4">
+        <a href="/cart" class="flex items-center gap-1 text-blue-600 hover:text-blue-800 transition">
+          <i class="ri-shopping-cart-2-line text-xl"></i> Cart
+        </a>
+        <a href="/login" class="text-sm px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700 transition">
+          Login
+        </a>
+        <a href="/register" class="text-sm px-3 py-1 rounded border border-blue-600 text-blue-600 hover:bg-blue-50 transition">
+          Register
+        </a>
+      </div>
+    <% } %>
+  </div>
+</header>
+
+<!-- Spacer -->
+<div class="h-20"></div>
+
